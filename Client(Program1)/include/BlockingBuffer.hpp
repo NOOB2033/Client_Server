@@ -38,7 +38,7 @@ public:
     void close() {
         std::lock_guard lock(mutex);
         closeBuffer = true;
-        notEmpty.notify_one();
+        notEmpty.notify_all();
     }
 
     bool isClosed() {
