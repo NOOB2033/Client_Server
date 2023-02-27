@@ -15,4 +15,4 @@ set(SOURCES
 add_executable(Server ${HEADERS} ${SOURCES})
 
 include_directories(${Boost_INCLUDE_DIR})
-target_link_libraries(Client ${Boost_LIBRARIES})
+target_link_libraries(Server ${Boost_LIBRARIES})
